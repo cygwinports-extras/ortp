@@ -1,0 +1,131 @@
+ortp
+------------------------------------------
+oRTP is a LGPL licensed C library implementing the Realtime Transport 
+Protocol (RFC 3550).
+
+Runtime requirements:
+  cygwin-1.7.0-49
+  libgcc1-4.3.2-2
+  libsrtp1-1.4.4-1
+  openssl-0.9.8k-2
+
+Build requirements:
+(besides corresponding -devel packages)
+  autoconf2.5-2.63-10
+  automake1.9-1.9.6-10
+  binutils-20080624-2
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  libtool-2.2.7a-12
+  make-3.81-2
+  sed-4.1.5-2
+
+Canonical website:
+  http://www.linphone.org/index.php/eng/code_review/ortp
+
+Canonical download:
+  http://download.savannah.gnu.org/releases/linphone/ortp/sources/
+
+-------------------------------------------
+
+Build instructions:
+  unpack ortp-0.16.0-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./ortp-0.16.0-X.cygport all
+
+This will create:
+  /usr/src/libortp-devel-0.16.0-X.tar.bz2
+  /usr/src/libortp8-0.16.0-X.tar.bz2
+  /usr/src/ortp-0.16.0-X-src.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+(libortp8)
+  /usr/bin/cygortp-8.dll
+
+(libortp-devel)
+  /usr/include/ortp/b64.h
+  /usr/include/ortp/event.h
+  /usr/include/ortp/ortp.h
+  /usr/include/ortp/payloadtype.h
+  /usr/include/ortp/port.h
+  /usr/include/ortp/rtcp.h
+  /usr/include/ortp/rtp.h
+  /usr/include/ortp/rtpsession.h
+  /usr/include/ortp/rtpsignaltable.h
+  /usr/include/ortp/sessionset.h
+  /usr/include/ortp/srtp.h
+  /usr/include/ortp/str_utils.h
+  /usr/include/ortp/stun.h
+  /usr/include/ortp/stun_udp.h
+  /usr/include/ortp/telephonyevents.h
+  /usr/lib/libortp.a
+  /usr/lib/libortp.dll.a
+  /usr/lib/libortp.la
+  /usr/lib/pkgconfig/ortp.pc
+  /usr/share/doc/ortp/AUTHORS
+  /usr/share/doc/ortp/COPYING
+  /usr/share/doc/ortp/ChangeLog
+  /usr/share/doc/ortp/NEWS
+  /usr/share/doc/ortp/README
+  /usr/share/doc/ortp/TODO
+  /usr/share/doc/ortp/html/annotated.html
+  /usr/share/doc/ortp/html/b64_8c.html
+  /usr/share/doc/ortp/html/b64_8h-source.html
+  /usr/share/doc/ortp/html/doxygen.css
+  /usr/share/doc/ortp/html/doxygen.png
+  /usr/share/doc/ortp/html/event_8h-source.html
+  /usr/share/doc/ortp/html/files.html
+  /usr/share/doc/ortp/html/functions.html
+  /usr/share/doc/ortp/html/functions_vars.html
+  /usr/share/doc/ortp/html/globals.html
+  /usr/share/doc/ortp/html/globals_defs.html
+  /usr/share/doc/ortp/html/globals_func.html
+  /usr/share/doc/ortp/html/index.html
+  /usr/share/doc/ortp/html/jitterctl_8h-source.html
+  /usr/share/doc/ortp/html/ortp-config-win32_8h-source.html
+  /usr/share/doc/ortp/html/ortp_8h-source.html
+  /usr/share/doc/ortp/html/ortp_8h.html
+  /usr/share/doc/ortp/html/payloadtype_8h-source.html
+  /usr/share/doc/ortp/html/payloadtype_8h.html
+  /usr/share/doc/ortp/html/port_8h-source.html
+  /usr/share/doc/ortp/html/rtcp_8h-source.html
+  /usr/share/doc/ortp/html/rtp_8h-source.html
+  /usr/share/doc/ortp/html/rtpsession_8h-source.html
+  /usr/share/doc/ortp/html/rtpsession_8h.html
+  /usr/share/doc/ortp/html/rtpsession__priv_8h-source.html
+  /usr/share/doc/ortp/html/rtpsignaltable_8h-source.html
+  /usr/share/doc/ortp/html/rtptimer_8h-source.html
+  /usr/share/doc/ortp/html/scheduler_8h-source.html
+  /usr/share/doc/ortp/html/sessionset_8h-source.html
+  /usr/share/doc/ortp/html/sessionset_8h.html
+  /usr/share/doc/ortp/html/srtp_8h-source.html
+  /usr/share/doc/ortp/html/str__utils_8h-source.html
+  /usr/share/doc/ortp/html/struct__JBParameters.html
+  /usr/share/doc/ortp/html/struct__RtpProfile.html
+  /usr/share/doc/ortp/html/struct__RtpSession.html
+  /usr/share/doc/ortp/html/stun_8h-source.html
+  /usr/share/doc/ortp/html/stun__udp_8h-source.html
+  /usr/share/doc/ortp/html/tab_b.gif
+  /usr/share/doc/ortp/html/tab_l.gif
+  /usr/share/doc/ortp/html/tab_r.gif
+  /usr/share/doc/ortp/html/tabs.css
+  /usr/share/doc/ortp/html/telephonyevents_8h-source.html
+  /usr/share/doc/ortp/html/telephonyevents_8h.html
+  /usr/share/doc/ortp/html/utils_8h-source.html
+
+------------------
+
+Port Notes:
+
+----- version 0.16.0-1 -----
+Initial release for Cygwin 1.7.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/

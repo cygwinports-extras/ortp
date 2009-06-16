@@ -1,0 +1,6 @@
+category: Net
+requires: cygwin libortp8 libsrtp-devel openssl-devel
+external-source: ortp
+sdesc: "Realtime Transport Protocol library (development)"
+ldesc: "oRTP is a LGPL licensed C library implementing the Realtime 
+Transport Protocol (RFC 3550)."
