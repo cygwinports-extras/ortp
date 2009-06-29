@@ -1,5 +1,5 @@
 category: Net
-requires: cygwin libortp8 libsrtp-devel openssl-devel
+requires: libortp8 libsrtp-devel openssl-devel
 external-source: ortp
 sdesc: "Realtime Transport Protocol library (development)"
 ldesc: "oRTP is a LGPL licensed C library implementing the Realtime 
