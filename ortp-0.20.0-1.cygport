@@ -1,7 +1,6 @@
 DESCRIPTION="Real-time Transport Protocol library"
 HOMEPAGE="http://www.linphone.org/index.php/eng/code_review/ortp"
-SRC_URI="http://download.savannah.nongnu.org/releases/linphone/ortp/sources/${P}.tar.gz"
-PATCH_URI="0.13.1-no-undefined.patch"
+SRC_URI="mirror://savannah/linphone/ortp/sources/${P}.tar.gz"
 
 PKG_NAMES="${PN} lib${PN}8 lib${PN}-devel"
 libortp8_CONTENTS="usr/bin/*-8.dll"
@@ -9,4 +8,5 @@ libortp_devel_CONTENTS="usr/include/ usr/lib/ usr/share/"
 
 DIFF_EXCLUDES="ortp.doxygen"
 
+CYGCONF_ARGS="--enable-ssl-hmac"
 MAKEOPTS+=" pkgdocdir=/usr/share/doc/ortp"
