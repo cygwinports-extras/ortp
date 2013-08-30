@@ -1,0 +1,18 @@
+NAME="ortp"
+VERSION=0.20.0
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="Realtime Transport Protocol library"
+DESCRIPTION="oRTP is a LGPL licensed C library implementing the Realtime
+Transport Protocol (RFC 3550)."
+HOMEPAGE="http://www.linphone.org/"
+SRC_URI="mirror://savannah/linphone/ortp/sources/ortp-${VERSION}.tar.gz"
+
+PKG_NAMES="libortp8 libortp-devel"
+libortp8_CONTENTS="usr/bin/*-8.dll"
+libortp_devel_CONTENTS="usr/include/ usr/lib/ usr/share/"
+
+DIFF_EXCLUDES="ortp.doxygen"
+
+CYGCONF_ARGS="--enable-ssl-hmac"
+MAKEOPTS+=" pkgdocdir=/usr/share/doc/ortp"

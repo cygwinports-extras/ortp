@@ -1,4 +1,0 @@
-category: Net
-sdesc: "Realtime Transport Protocol library (sources)"
-ldesc: "oRTP is a LGPL licensed C library implementing the Realtime 
-Transport Protocol (RFC 3550)."
